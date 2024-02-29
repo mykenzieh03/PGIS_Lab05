@@ -92,7 +92,7 @@
         // Create a new map instance
         let map = new maplibregl.Map({
             container: 'map', // container id
-            style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=Cusoe5zmfmn26glFoeoe', // style URL
+            style: 'https://api.maptiler.com/maps/satellite/style.json?key=kyKHC6ADIuvuOeb1Fxtj', // style URL
             center: [-122.3321, 47.6062], // starting position [lng, lat]
             // pitch: 45, // pitch in degrees
             zoom: 12 // starting zoom
@@ -205,7 +205,7 @@
 
             try {
                 // Send the POST request to add the new record
-                await fetch(' https://geog458-pgis-55958476fe1e.herokuapp.com/api/add-record', settings);
+                await fetch('https://geog458-pgis-55958476fe1e.herokuapp.com/api/add-record', settings);
             } catch (err) {
                 // Handle any errors that occur during the request
                 console.error(err);
