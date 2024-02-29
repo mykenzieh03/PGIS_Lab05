@@ -100,7 +100,7 @@
 
         // Fetch existing records when the window is loaded
         window.addEventListener("load", async function () {
-            let response = await fetch('https://geog458-pgis-55958476fe1e.herokuapp.com/api/get-record', {
+            let response = await fetch(' https://geog458-pgis-55958476fe1e.herokuapp.com/api/get-record', {
                 method: 'GET'
             });
 
@@ -205,7 +205,7 @@
 
             try {
                 // Send the POST request to add the new record
-                await fetch('https://geog458-pgis-55958476fe1e.herokuapp.com/api/add-record', settings);
+                await fetch(' https://geog458-pgis-55958476fe1e.herokuapp.com/api/add-record', settings);
             } catch (err) {
                 // Handle any errors that occur during the request
                 console.error(err);
